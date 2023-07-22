@@ -1,4 +1,5 @@
-# Ejemplo de uso de AES
+# Ejemplo de uso de AES, esto es peligroso si no sabes exactamente lo que estás haciendo
+# y sólo debería ser usado en casos muy específicos.
 
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 import secrets
@@ -21,7 +22,6 @@ print(ciphertext.hex())
 print(len(ciphertext.hex()))
 print(message)
 print(c.decryptor().update(ciphertext))
-
 
 # Using algorithms.AES with a 256-bit key:
 key = secrets.token_bytes(256 // 8)
