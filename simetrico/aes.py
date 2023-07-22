@@ -6,7 +6,9 @@ import secrets
 key = b"Clave de 16 byte"
 # una mejor clave sería:
 key = secrets.token_bytes(16)
-message = b"a" * 32
+message = b"a" * 120 + b"b"
+message = b"hola"
+print(len(message))
 
 # Modos de trabajo de AES:
 # ECB: Electronic Code Book
@@ -15,8 +17,10 @@ message = b"a" * 32
 c = Cipher(algorithms.AES(key), modes.CBC(b"IV de 16 bytesss"))
 ciphertext = c.encryptor().update(message)
 
-print(ciphertext)
-print(len(ciphertext))
+print(ciphertext.hex())
+print(len(ciphertext.hex()))
+print(message)
+print(c.decryptor().update(ciphertext))
 
 
 # Using algorithms.AES with a 256-bit key:
