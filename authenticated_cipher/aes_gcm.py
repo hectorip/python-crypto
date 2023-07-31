@@ -1,8 +1,19 @@
 # AES-GCM (Galois Counter Mode)
-
+from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 import secrets
-from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 
-# Instatiating a new AES-GCM cipher
+data = b"este es el mensaje que quiero cifrar y autenticar"
+datos_no_autenticados = b"este es el mensaje que quiero cifrar pero no autenticar"
+key = AESGCM.generate_key(bit_length=128)
 
-c = Cipher(algorithms.AES(secrets.token_bytes(32)), modes.GCM(secrets.token_bytes(12)))
+# Instanciando el cifrador AESGCM
+aes = AESGCM(key)
+
+
+# El nonce es un valor que sólo se usa una vez,
+# no tiene que ser aleatorio pero sí único
+nonce = secrets.token_bytes(12)
+
+ct = aes.encrypt(nonce, data, datos_no_autenticados)
+
+print(ct)
