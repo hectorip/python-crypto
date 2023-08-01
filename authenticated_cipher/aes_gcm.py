@@ -16,4 +16,4 @@ nonce = secrets.token_bytes(12)
 
 ct = aes.encrypt(nonce, data, datos_no_autenticados)
 
-print(ct)
+print(f"Datos cifrados con tag de autenticación y datos asociados: {ct}")
