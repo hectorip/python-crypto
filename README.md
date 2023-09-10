@@ -2,10 +2,13 @@
 
 Usando y ejemplificando primitivas y protocolos criptográficos en Python.
 
-## Recursos
+## Módulos de criptografía en Python
 
-- [Módulo criptográfico de Python](https://docs.python.org/3/library/crypto.html)
+- [Módulo secrets](https://docs.python.org/3/library/secrets.html)
 - [Hashes en Python](https://docs.python.org/3/library/hashlib.html)
-- [Fernet en Python](https://cryptography.io/en/latest/fernet.html)
-- [Cifrado simétrico en Python](https://cryptography.io/en/latest/hazmat/primitives/symmetric-encryption.html)
-- [Cifrado asimétrico en Python](https://cryptography.io/en/latest/hazmat/primitives/asymmetric-encryption.html)
+- [Módulo Cryptography](https://cryptography.io/en/latest/)
+
+## Cómo usar este repositorio
+
+
+En cada carpeta encontrarás ejemplos de cómo usar la primitivas criptográficas en Python, además en `secretos` encontrarás formas de usar el módulo `secrets` para generar valores aleatorios criptográficamente seguros.
