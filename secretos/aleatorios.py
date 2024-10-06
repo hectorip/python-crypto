@@ -14,7 +14,10 @@ system_random = secrets.SystemRandom()
 print(system_random.randint(0, 10000))
 
 # también sirve para elegir elementos aleatorios de una lista
+#
 print(system_random.choice(["a", "b", "c"]))
 
 # /dev/random -> bits aleatorios reales
 # /dev/urandom -> bits pseudoaleatorios
+#
+
