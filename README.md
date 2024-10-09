@@ -2,7 +2,8 @@
 
 Usando y ejemplificando primitivas criptográficas en Python.
 
-Todos los ejemplos están basados en el paquete [cryptography](https://cryptography.io/en/latest/), que para mi gusto es el más seguro y que sigue siendo mantenido en el entorno de Python.
+Todos los ejemplos están basados en el paquete [cryptography](https://cryptography.io/en/latest/),
+que para mi es el más seguro y que sigue siendo mantenido en el entorno de Python.
 
 ## Módulos de criptografía en Python
 
@@ -16,4 +17,11 @@ Todos los ejemplos están basados en el paquete [cryptography](https://cryptogra
 
 ## Cómo usar este repositorio
 
-En cada carpeta encontrarás ejemplos de cómo usar la primitivas criptográficas en Python, además en `secretos` encontrarás formas de usar el módulo `secrets` para generar valores aleatorios criptográficamente seguros.
+En cada carpeta encontrarás ejemplos de cómo usar la primitivas
+criptográficas en Python, además en `secretos` encontrarás formas
+de usar el módulo `secrets` para
+generar valores aleatorios criptográficamente seguros.
+
+## Contribuir
+
+Si encuentras algún error o algo que mejorar, por favor abre un pull request con tus cambios.
