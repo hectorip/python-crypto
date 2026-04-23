@@ -1,6 +1,7 @@
 # Ejemplo de uso de AES, esto es peligroso si no sabes exactamente lo que estás haciendo
 # y sólo debería ser usado en casos muy específicos.
-
+# Hazmat = hazardous material = material peligoroso
+#
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 import secrets
 
